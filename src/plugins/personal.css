@@ -1,0 +1,173 @@
+/* Flex Directions and Properties */
+.flex{
+    display: flex;
+}
+
+.row-center{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-between{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-end{
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.row-start{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.row-around{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row-even{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrap{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-center{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-start{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.column-end{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+/* End of Flex Direction and Properties */
+
+/* Tooltips */
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltiptext-top{
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltiptext-top::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltiptext-down{
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltiptext-down::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+/* End of Tooltips */
+
+/* Ul Navigation Links */
+.nav-links{
+    width: fit-content;
+    list-style-type: none;
+}
+/* End of Ul Navigation Links */
+
+/* Dropdowns */
+.dropbtn {
+    border: none;
+    text-transform: capitalize;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu .dropdown-item{
+    text-transform: capitalize;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+/* End of Dropdowns */

@@ -1,0 +1,65 @@
+:root{
+    --font1: 'Raleway', sans-serif;
+    --font2: 'Open Sans', sans-serif;
+    --font3: 'Pacifico', cursive;
+    --bg-color1: #ffffff;/* White */
+    --bg-color2: #242124;/* Raisin Black */
+    --bg-color3: #FF7518;/* Pumpkin Orange */
+}
+
+.support-hero{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.support-hero .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.support-hero .content .heading{
+    font-family: var(--font1);
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 4vh;
+}
+
+.support-hero .content .emphasis{
+    width: 100%;
+    font-size: 1.3em;
+}
+
+.volunteer .container, .donate .container{
+    background-color: var(--bg-color2);
+    color: var(--bg-color1);
+}
+
+.volunteer .container, .donate .container{
+    padding: 5vh 5vw;
+}
+
+.volunteer .container .heading, .donate .container .heading{
+    font-family: var(--font1);
+    font-size: 2em;
+    text-transform: capitalize;
+    margin-bottom: 2vh;
+    text-decoration: underline;
+}
+
+.volunteer .container .emphasis, .donate .container .emphasis{
+    width: 75%;
+    font-size: 1.2em;
+    margin-bottom: 3vh;
+}
+
+.volunteer .container .cta, .donate .container .cta{
+    width: fit-content;
+    padding: 10px;
+    padding-right: 30px;
+    background-color: var(--bg-color3);
+    text-transform: uppercase;
+}
